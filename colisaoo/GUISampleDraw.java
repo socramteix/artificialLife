@@ -1,7 +1,4 @@
-/* GRUPO: EVERTON VIEIRA RODRIGUES, 10.1.8231; LUCAS SOARES DA CRUZ, 10.1.8114; MARCOS TEIXEIRA DE OLIVEIRA
-, 10.1.8199; WILSON PEREIRA FREITAS, 10.1.8254; */
-
-
+/* MARCOS TEIXEIRA DE OLIVEIRA */
 
 package colisaoo;
 
@@ -37,16 +34,16 @@ public class GUISampleDraw implements ActionListener{
 	        JTextField jtf, jtf2;
 		
 	GUISampleDraw (){
-		    j           = new JMenu("COMECANDO");
+		    j           = new JMenu("STARTING");
 		    d           = new DrawPanel();
 		    jb          = new JButton("PAUSE");
 		    jb2         = new JButton("CONTINUE");
 		    jb3         = new JButton("OK");
-		    jmi         = new JMenuItem("INICIO");
+		    jmi         = new JMenuItem("HOME");
 		    jm          = new JMenuBar();
-		    l3          = new JLabel("e o tempo de reproducao dos vegetais respectivamente");
-		    l1          = new JLabel(" >>>>> VIDA ARTIFICIAL IMPLEMENTADA EM JAVA <<<<< "); 
-		    l2          = new JLabel("Digite a quantidade de seres de cada especie");
+		    l1          = new JLabel(" >>>>> ARTIFICIAL LIFE IMPLEMENTED IN JAVA <<<<< "); 
+		    l2          = new JLabel("Type the how many individuals for each specie");
+		    l3          = new JLabel("and the time of vegetables reprodution respectively");
 		    p2          = new JPanel();
 		    jtf2        = new JTextField("0",5);
 		    jtf         = new JTextField("0",5);
@@ -93,7 +90,7 @@ public class GUISampleDraw implements ActionListener{
 			quantidade = Integer.parseInt(jtf.getText());
 			d.setTempo(Integer.parseInt(jtf2.getText()));
 			}
-			catch(Exception exce){ JOptionPane.showMessageDialog(null,"Dgite um numero valido!");}
+			catch(Exception exce){ JOptionPane.showMessageDialog(null,"Type a valid number!");}
 			
 			for(int i = 0; i < quantidade; i++){
 				  int h = r.nextInt(650);
@@ -117,7 +114,7 @@ public class GUISampleDraw implements ActionListener{
      JFrame mainWindow = new JFrame();
      
      mainWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-     mainWindow.setTitle("UNIVERSIDADE FEDERAL DE OURO PRETO - ICEA - JOAO MONLEVADE - VIDA ARTIFIAL");
+     mainWindow.setTitle("FEDERAL UNIVERSITY OF OURO PRETO - ICEA - JOAO MONLEVADE - ARTIFIAL LIFE");
      mainWindow.setJMenuBar(jm);
      mainWindow.add(d,BorderLayout.CENTER);
      mainWindow.add(p2,BorderLayout.NORTH);
