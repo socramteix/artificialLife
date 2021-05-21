@@ -10,5 +10,5 @@ to compile:
 - javac Ponto.java Forma.java DrawPanel.java Rect.java Triangulo.java Circulo.java GUISampleDraw.java
 
 to run:
-- java -cp /home/marcos/Projetos/vidaArtificial/ colisaoo.GUISampleDraw 
+- java -cp <path/to/package> colisaoo.GUISampleDraw 
 
